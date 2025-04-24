@@ -1,1 +1,33 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-yellow-color: #f8d24e;
+  --primary-green-color: #84a178;
+  --bright-text-color: #fcfcfc;
+  --dark-text-color: #131313;
+  --card-green-color: #aec6a5;
+  --card-yellow-color: #efd478;
+  --card-brown-color: #d6936d;
+  --grey-color: #d9d9d9;
+  --green-color: #9cbe8f;
+  --orange-color: #d5753f;
+  --footer-text-color: #7a7a7a;
+  --border-footer-color: #e1e1e1;
+  --font-Montserrat: 'Montserrat', sans-serif;
+  --font-DMSerif: 'DM Serif Display', serif;
+  --font-Seymour: 'Seymour One', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font-Montserrat);
+  background-color: var(--primary-green-color);
+  min-width: 300px;
+  position: relative;
+}

@@ -1,0 +1,109 @@
+.hero {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/hero-header/desktop-background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 2em;
+  color: var(--bright-text-color);
+  font-family: var(--font-Montserrat);
+}
+
+h1 {
+  font-family: var(--font-Seymour);
+  font-size: 2.3rem;
+  width: 50%;
+}
+
+div.hero-description-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1em;
+}
+
+img.hero-image {
+  width: 225px;
+  height: 225px;
+  align-items: end;
+}
+
+p.hero-description {
+  font-size: 0.8rem;
+  // max-width: 200px;
+  width: 30%;
+  font-family: var(--font-DMSerif);
+}
+
+img.hero-smile {
+  max-width: 450px;
+  max-height: 560px;
+  // object-fit: contain;
+  align-self: flex-end;
+}
+
+div.hero-info-sections {
+  align-self: flex-start;
+}
+
+div.hero-info-sections dt {
+  color: var(--dark-text-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div.hero-info-sections dl {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    background-image: url('../images/hero-header/tablet-background.png');
+  }
+
+  img.hero-smile {
+    max-width: 260px;
+    max-height: 330px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-image: url('../images/hero-header/phone-background.png');
+    background-size: initial;
+    background-position-x: 80%;
+  }
+
+  div.hero-description-section {
+    display: none;
+  }
+
+  h1.hero-title {
+    font-size: 1.5rem;
+  }
+
+  div.hero-info-sections {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position-x: 150%;
+    flex-direction: column;
+  }
+
+  img.hero-smile {
+    max-width: 117px;
+    max-height: 217px;
+    // align-items: flex-start;
+  }
+
+  h1.hero-title {
+    font-size: 1rem;
+  }
+}

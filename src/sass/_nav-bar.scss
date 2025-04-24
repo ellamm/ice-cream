@@ -1,0 +1,82 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  margin: 0;
+}
+
+div.menu {
+  overflow: hidden;
+}
+
+a.menu-item {
+  display: block;
+  float: left;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  color: var(--bright-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-Montserrat);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+a.menu-item:hover {
+  color: var(--primary-yellow-color);
+}
+
+a.icon {
+  display: none;
+}
+
+button.nav-bar-btn {
+  background-color: var(--primary-yellow-color);
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-Montserrat);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark-text-color);
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .menu a.menu-item {
+    display: none;
+    padding: 1em 2em;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  a.menu-item:hover {
+    color: var(--dark-text-color);
+  }
+  .menu a.icon {
+    float: center;
+    display: block;
+  }
+  .menu.responsive {
+    position: relative;
+  }
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,27 @@
+<section class="nav-bar" id="home">
+  <a class="logo-link" href="#home"
+    ><img src="images/hero-header/logo.png" alt="logo" class="logo"
+  /></a>
+
+  <div class="menu" id="myMenu">
+    <a href="#home" class="menu-item">Home</a>
+    <a href="#about" class="menu-item">How it's made</a>
+    <a href="#products" class="menu-item">Our Producs</a>
+    <a href="#contacts" class="menu-item">Contact</a>
+    <a href="#" class="icon" onclick="openMenu()"
+      ><i class="fa-solid fa-bars"></i
+    ></a>
+  </div>
+  <button class="nav-bar-btn">Buy now ></button>
+</section>
+
+<script>
+  function openMenu() {
+    var menu = document.getElementById('myMenu');
+    if (menu.className === 'menu') {
+      menu.className += ' responsive';
+    } else {
+      menu.className = 'menu';
+    }
+  }
+</script>
