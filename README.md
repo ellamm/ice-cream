@@ -1,99 +1,87 @@
-# Parcel template
+# 🍦 Ice Cream Landing Page - A Learning Journey 🚀
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen)](https://ellamm.github.io/ice-cream/)
 
-## Подготовка нового проекта
+## 🍦 Overview
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи зависимости проекта в терминале командой `npm install` .
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+This "Ice Cream" website is made as a learning project and not all the
+envisioned functionalities are fully implemented. I focused on learning
+different concepts and improving the ability to translate a design into a
+functional web presence as this project was done based on a provided Figma
+design.
 
-## Файлы и папки
+Think of it as a glimpse into the potential of a brand, built with a focus on
+aesthetics and user engagement.
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+## ✨ Key Features:
 
-## Деплой
+### 🍦 Hero Section:
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
+A prominent introduction with an image, a clear headline, and a call to action
+encouraging users to explore further and a button to place an order.
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+### 🍦 About Section:
 
-Пролистай страницу до последней секции, в которой убедись что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
+This section provides information about the product, ingredients and the brand's
+narrative. A modal window offers an opportunity to learn more, adding an
+interactive layer to the user experience.
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+### 🍦 Products Section:
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+This section beautifully showcases the range of products with visuals and
+descriptions. Clicking the arrow reveals a detailed modal providing nutritional
+information like calorie count and a breakdown of ingredients for each product.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
+### 🍦 Gallery:
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+This gallery is dedicated to displaying high-quality photographs of the ice
+cream, designed to capture attention and tempt potential customers.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+### 🍦 Contact/Location Section:
 
-### Статус деплоя
+This section provides essential contact information and the physical location of
+the ice cream shop, making it easy for users to reach out or visit.
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+### 🍦 Footer:
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+The standard sign-off, containing copyright information and links to the brand's
+social media presence.
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+## 🛠️ Technologies Used:
 
-![Deployment status](./assets/status.png)
+### 🧱 HTML (The Foundation):
 
-### Живая страница
+Serving as the structural backbone, HTML organizes the website's content,
+ensuring a semantic and accessible foundation.
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+### 🎨 CSS (The Visual Artist):
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
+Bring the design to life, handling every visual aspect from the overall layout
+and color scheme to the typography and engaging styling.
 
-## Как это работает
+### 🚀 JavaScript (The Interactivity Engine):
 
-![How it works](./assets/how-it-works.png)
+Powers elements like the modal windows, potential image carousels, smooth
+scrolling effects, and any future interactive features.
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+## 🧠 Key Learnings:
+
+This project served as a valuable hands-on experience, reinforcing crucial
+front-end development skills:
+
+- **Semantic HTML Structure:** Gaining a deeper understanding of how to
+  structure content logically and semantically using HTML for better
+  accessibility and SEO.
+- **Styling and Layout with CSS:** Learning the art of styling web pages with
+  CSS, including implementing responsive design principles using media queries
+  and flexible layouts to ensure a seamless experience across all devices.
+- **Bringing Pages to Life with JavaScript:** Developing practical skills in
+  using JavaScript to add interactivity, handle user events, and create dynamic
+  elements like modal windows.
+- **Figma to Frontend Workflow:** Gaining practical experience in translating
+  visual design specifications from a Figma template into a functional web page,
+  understanding the nuances of implementing a designer's vision.
+- **Version Control and Deployment:** Solidifying skills in utilizing Git for
+  version control and successfully deploying a static website to platforms like
+  GitHub Pages, making the project accessible online.
